@@ -6,14 +6,9 @@ let cacheBountiesNetwork = null
 let cacheTotal = null
 
 const getGitcoin = async () => {
-    const response = await fetch('https://gitcoin.co/api/v0.1/bounties/')
+    const response = await fetch('https://gitcoin.co/api/v0.1/bounties/?&org=oceanprotocol&is_open=true')
 
-    const gitcoinBody = await response.json() // returns only open bounties by default
-
-    const gitcoin = await gitcoinBody.filter(
-        // filter the response manually, no way atm to do that as API query
-        item => item.funding_organisation.includes('Ocean Protocol')
-    )
+    const gitcoin = await response.json() // returns only open bounties by default
 
     return {
         data: gitcoin.length,
