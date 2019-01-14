@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "oceanprotocol-bounties",
+  "alias": "oceanprotocol-bounties.now.sh",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ]
+}
