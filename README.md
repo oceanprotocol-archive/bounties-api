@@ -11,6 +11,10 @@
 <img src="http://forthebadge.com/images/badges/as-seen-on-tv.svg" height="20"/>
 <img src="http://forthebadge.com/images/badges/uses-badges.svg" height="20"/>
 
+---
+### Deprecated. Please use https://github.com/oceanprotocol/community-numbers
+---
+
 ## API
 
 Endpoint: [`https://oceanprotocol-bounties.now.sh`](https://oceanprotocol-bounties.now.sh)
